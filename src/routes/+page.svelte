@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { BookLock, Github, Linkedin, Mail } from 'lucide-svelte';
+	import { BookLock, Github, Globe, Linkedin, Mail } from 'lucide-svelte';
 	import '../app.css';
 
 	let liameObsc = 'zxbupx.xyxvwnxzxtx@x4x0xlxnxqxzxjxrxexqxannk';
@@ -188,11 +188,19 @@
 		>
 			<div class="flex-grow w-full pt-6 pl-8 mb-8 pr-8">
 				<h3 class="font-bold text-3xl">Election Simulator</h3>
-				<div>
+				<div class="flex flex-col mb-4 gap-y-1">
+					<a
+						href="https://andystopia.github.io/d3-a-few-days-before-election"
+						target="_blank"
+						class="flex flex-row gap-x-1 items-center bg-purple-300/10 rounded-full px-2 py-0.5 w-min text-nowrap ml-2 border-white/10 border hover:bg-white/20 hover:scale-[1.01] transition duration-75"
+					>
+						<div><Globe size={11} strokeWidth={3}></Globe></div>
+						<span class="text-xs font-semibold">/d3-a-few-days-before-election</span>
+					</a>
 					<a
 						href="https://github.com/andystopia/d3-a-few-days-before-election"
 						target="_blank"
-						class="flex flex-row gap-x-1 items-center bg-purple-300/10 rounded-full px-2 py-0.5 mb-4 w-min text-nowrap ml-2 border-white/10 border hover:bg-white/20 hover:scale-[1.01] transition duration-75"
+						class="flex flex-row gap-x-1 items-center bg-purple-300/10 rounded-full px-2 py-0.5 w-min text-nowrap ml-2 border-white/10 border hover:bg-white/20 hover:scale-[1.01] transition duration-75"
 					>
 						<div><Github size={11} strokeWidth={3}></Github></div>
 						<span class="text-xs font-semibold">andystopia/d3-a-few-days-before-election</span>
