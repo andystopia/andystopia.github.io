@@ -34,7 +34,7 @@
 				Home
 			</a>
 			
-			<a href="/blog" target="_blank"  class=" rounded-full grid place-items-center hover:bg-white/10 transition-colors duration-75">
+			<a href="https://andystopia.github.io/blog" target="_blank"  class=" rounded-full grid place-items-center hover:bg-white/10 transition-colors duration-75">
 				Blog
 			</a>
 		</div>
