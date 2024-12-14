@@ -26,8 +26,19 @@
 </script>
 
 <div
-	class="w-screen h-screen from-zinc-800 to-zinc-700 bg-gradient-to-tr text-white grid items-center grid-rows-[5fr_1fr]"
+	class="w-screen h-screen from-zinc-800 to-zinc-700 bg-gradient-to-tr text-white grid items-center grid-rows-[4em_5fr_1fr]"
 >
+	<div class=" h-full py-4 grid place-items-center">
+		<div class="border border-zinc-600 h-full w-80 rounded-full grid grid-cols-2 gap-x-2 ">
+			<a href="/" class="bg-zinc-600  rounded-full grid place-items-center hover:bg-white/10 transition-colors duration-75"> 
+				Home
+			</a>
+			
+			<a href="/blog" target="_blank"  class=" rounded-full grid place-items-center hover:bg-white/10 transition-colors duration-75">
+				Blog
+			</a>
+		</div>
+	</div>
 	<div class="max-w-full pl-10 md:pl-32">
 		<h1 class="font-semibold text-1xl italic text-zinc-300">Portfolio Of</h1>
 		<h1 class="font-black text-7xl">Andy Day</h1>
@@ -35,7 +46,7 @@
 		<h2 class="mt-2">A Statistician and Software Engineer</h2>
 
 		<button
-			class="bg-orange-700 font-semibold px-5 py-2 rounded-full mt-10 ml-2 shadow transform hover:scale-[1.025] transition-transform duration-[25ms] active:scale-100 justify-between flex flex-row gap-x-3 border-2 border-orange-700 hover:border-orange-600 text-sm"
+			class="bg-orange-700 font-semibold px-5 py-1 rounded-full mt-10 ml-2 shadow transform hover:scale-[1.025] transition-transform duration-[25ms] active:scale-100 justify-between flex flex-row gap-x-3 border-2 border-orange-700 hover:border-orange-600 text-sm"
 			onclick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
 			><div class="text-nowrap">Let's Get Into It!</div>
 			<div>&#8595;</div></button
