@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin, Mail, Phone } from 'lucide-svelte';
+	import { BookLock, Github, Linkedin, Mail } from 'lucide-svelte';
 	import '../app.css';
 
 	let liameObsc = 'zxbupx.xyxvwnxzxtx@x4x0xlxnxqxzxjxrxexqxannk';
@@ -10,19 +10,19 @@
 		);
 	}
 
-  function computeEmail(rend: boolean) {
-    if (rend) {
-      return rot13(liameObsc)
-						.split('')
-						.map((v, i) => [v, i])
-						.filter((x) => x[1] % 2 == 0)
-						.map((x) => x[0])
-						.reverse()
-						.join('')
-    } else { 
-      return liameObsc
-    }
-  }
+	function computeEmail(rend: boolean) {
+		if (rend) {
+			return rot13(liameObsc)
+				.split('')
+				.map((v, i): [string, number] => [v, i])
+				.filter((x) => x[1] % 2 == 0)
+				.map((x) => x[0])
+				.reverse()
+				.join('');
+		} else {
+			return liameObsc;
+		}
+	}
 </script>
 
 <div
@@ -31,6 +31,7 @@
 	<div class="max-w-full pl-10 md:pl-32">
 		<h1 class="font-semibold text-1xl italic text-zinc-300">Portfolio Of</h1>
 		<h1 class="font-black text-7xl">Andy Day</h1>
+		<title>Day's Portfolio</title>
 		<h2 class="mt-2">A Statistician and Software Engineer</h2>
 
 		<button
@@ -46,7 +47,7 @@
 			<div class="grid grid-cols-3 gap-y-2 gap-x-5 h-25 place-items-center max-w-lg font-thin">
 				<button
 					class="px-5 py-2 rounded-md place-items-center grid bg-white/5 w-full shadow transition-colors duration-75 hover:border-zinc-600 border border-transparent"
-          onclick={() => liameRendered = !liameRendered}
+					onclick={() => (liameRendered = !liameRendered)}
 				>
 					<Mail strokeWidth={1} stroke="#e0e0e0" />
 					<div class="">Email</div>
@@ -77,7 +78,7 @@
 			<div class="w-80 h-16 border-zinc-700 border rounded-md px-4 py-2">
 				<div class="mb-2">My Email Is</div>
 				<code class="bg-white/10 w-full px-10 py-1">
-          {computeEmail(liameRendered)}
+					{computeEmail(liameRendered)}
 				</code>
 			</div>
 		</div>
@@ -116,7 +117,17 @@
 			class="flex lg:flex-row flex-col-reverse lg:px-10 from-purple-800 to-purple-600 via-purple-800 bg-gradient-to-l rounded-md"
 		>
 			<div class="flex-grow w-full pt-6 pl-8 mb-8 pr-8">
-				<h3 class="font-bold text-3xl mb-4">Newt</h3>
+				<h3 class="font-bold text-3xl">Newt</h3>
+				<div>
+					<a
+						href="https://github.com/andystopia/newt"
+						target="_blank"
+						class="flex flex-row gap-x-1 items-center bg-purple-300/10 rounded-full px-2 py-0.5 mb-4 w-min text-nowrap ml-2 border-white/10 border hover:bg-white/20 hover:scale-[1.025] transition duration-75"
+					>
+						<div><Github size={11} strokeWidth={3}></Github></div>
+						<span class="text-xs font-semibold">andystopia/newt</span>
+					</a>
+				</div>
 				<p class="indent-4 text-sm">
 					Newt is a package manager search tool. It's designed to start instantly, search
 					perfomantly, and provide a smoother developer experience than web based tools.
@@ -137,7 +148,15 @@
 			class="flex lg:flex-row flex-col-reverse lg:px-10 from-purple-800 to-purple-600 via-purple-800 bg-gradient-to-l rounded-md"
 		>
 			<div class="flex-grow w-full pt-6 pl-8 mb-8 pr-8">
-				<h3 class="font-bold text-3xl mb-4">Lichen Maps</h3>
+				<h3 class="font-bold text-3xl">Lichen Maps</h3>
+				<div>
+					<div
+						class="flex flex-row gap-x-1 items-center bg-purple-300/10 rounded-full px-2 py-0.5 mb-4 w-min text-nowrap ml-2 border-white/10 border"
+					>
+						<div><BookLock size={11} strokeWidth={3}></BookLock></div>
+						<span class="text-xs font-semibold">closed source</span>
+					</div>
+				</div>
 				<p class="indent-4 text-sm">
 					Lichen Maps is a full stack web application that I wrote, which uses OpenLayers for
 					rendering, supports multiple map views, can give the user the weather from weather.gov,
@@ -168,7 +187,17 @@
 			class="flex lg:flex-row flex-col-reverse lg:px-10 from-purple-800 to-purple-600 via-purple-800 bg-gradient-to-l rounded-md"
 		>
 			<div class="flex-grow w-full pt-6 pl-8 mb-8 pr-8">
-				<h3 class="font-bold text-3xl mb-4">Election Simulator</h3>
+				<h3 class="font-bold text-3xl">Election Simulator</h3>
+				<div>
+					<a
+						href="https://github.com/andystopia/d3-a-few-days-before-election"
+						target="_blank"
+						class="flex flex-row gap-x-1 items-center bg-purple-300/10 rounded-full px-2 py-0.5 mb-4 w-min text-nowrap ml-2 border-white/10 border hover:bg-white/20 hover:scale-[1.01] transition duration-75"
+					>
+						<div><Github size={11} strokeWidth={3}></Github></div>
+						<span class="text-xs font-semibold">andystopia/d3-a-few-days-before-election</span>
+					</a>
+				</div>
 				<p class="indent-4 text-sm">
 					I wrote this, because I wanted to know more about how the election would likely turn out.
 					I believe it nicely, and succiently demonstrates my data visualization skills, my ability
