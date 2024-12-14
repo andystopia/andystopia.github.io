@@ -91,7 +91,7 @@
 		<h2 class="text-4xl font-semibold underline decoration-orange-500 pb-10">Introduction.</h2>
 		<div class="font-serif indent-4">
 			<p class="text-justify text-balance">
-				I am an avid computer stastistian and computer scientist. I really enjoy architecting large
+				I am an avid stastistian and computer scientist. I really enjoy architecting large
 				solutions, composing them from smaller parts that I've both written myself and those written
 				in collaboration with team members. I seek to use my computer science and statistics
 				knowledge to form complex machine learning and data driven, impactful decisions.
