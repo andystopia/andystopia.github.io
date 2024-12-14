@@ -111,7 +111,6 @@
 	<div class="mx-5 max-w-[45em] w-full">
 		<h2 class="text-4xl font-semibold underline decoration-orange-500 mb-10">Showcase.</h2>
 	</div>
-	<div class="pb-2">All Projects Written <emph class="italic">Exclusively</emph> By Me</div>
 	<div class="flex gap-y-4 flex-col">
 		<div
 			class="flex lg:flex-row flex-col-reverse lg:px-10 from-purple-800 to-purple-600 via-purple-800 bg-gradient-to-l rounded-md"
